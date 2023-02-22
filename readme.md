@@ -18,8 +18,16 @@ Caso a porta da aplicação já esteja sendo utilizada por outra aplicação Doc
 
 Para acessar o ambiente digite em seu navegador e acesse:
 
-http://localhost
+http://localhost/api/pacientes
+
+Para listagem de pacientes.
+
+http://localhost/api/enderecos
+
+Para listagem de endereços.
 
 Para testar os endpoits é só acessar um cliente rest e importar o json na pasta raiz do projeto.
 
 Para testar import, só importar import.csv da pasta raiz por meio da rota no Insomnia.
+
+Para preencher seeds, só rodar sh script-access-container.sh no terminal, digitar o id do container, depois escolher bash ou sh, acessar a pasta /www/var/html e rodar o comando php artisan migrate && php artisan db:seed para preencher as tabelas com dados falsos.
