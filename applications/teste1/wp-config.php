@@ -20,7 +20,7 @@
 
 // ** Configurações do banco de dados - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'db_mysql_exemplo' );
+define( 'DB_NAME', 'wp_db' );
 
 /** Usuário do banco de dados MySQL */
 define( 'DB_USER', 'root' );
@@ -29,7 +29,12 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', 'senha_exemplar_mysql' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'mysql:3306' );
+
+//Debug mode:
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', true);
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8' );
@@ -82,7 +87,6 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
 
 /* Adicione valores personalizados entre esta linha até "Isto é tudo". */
 

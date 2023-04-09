@@ -1,0 +1,81 @@
+[09-Apr-2023 14:23:25 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:23:25 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:46 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:46 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:24:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:25:19 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Connection refused in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:25:19 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Connection refused in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:26:01 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:26:01 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:47 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:47 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:49 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:30:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:31:04 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:31:04 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:11 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:11 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:13 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:13 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:13 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:13 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:25 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:25 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 14:32:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/teste1/wp-includes/class-wpdb.php on line 2019
+[09-Apr-2023 15:27:07 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-includes/functions.php on line 2069
+[09-Apr-2023 15:27:07 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-includes/functions.php on line 2069
+[09-Apr-2023 15:27:07 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-includes/functions.php on line 2069
+[09-Apr-2023 15:27:11 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:11 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:11 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:11 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:11 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:11 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:13 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:13 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:13 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:13 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[09-Apr-2023 15:27:13 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
