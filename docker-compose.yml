@@ -30,13 +30,12 @@ services:
       - "8088:8088"
       - "8089:8089"
     depends_on:
-      - postgres
-      - redis
+      - postgres_db
       - mysql
 
   # aplicação Postgres
-  postgres:
-    container_name: postgres
+  postgres_db:
+    container_name: postgres_db
     image: postgres:14.3-alpine
     restart: always
     networks:
@@ -48,7 +47,7 @@ services:
       POSTGRES_DB: db_postgres_exemplo
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
-      - 20000:5432
+      - 20001:5432
 
   # aplicação MySQL
   mysql:
@@ -59,33 +58,12 @@ services:
     volumes:
       - MYSQL_VOLUME:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: senha_exemplar_mysql
-      MYSQL_DATABASE: db_mysql_exemplo
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db
     networks:
       - rede
     ports:
       - 30000:3306
-
-  # aplicação Redis
-  redis:
-    container_name: redis
-    image: redis:7-alpine
-    restart: always
-    command: ["redis-server", "--appendonly", "yes"]
-    volumes:
-      - ./data/redis:/data
-    networks:
-      - rede
-    ports:
-      - 6379:6379
-
-  queue:
-    container_name: queue
-    image: redis:7-alpine
-    volumes:
-      - ./data/redis:/data
-    networks:
-      - rede
 
 networks:
   rede:
@@ -94,4 +72,3 @@ networks:
 volumes:
   POSTGRES_VOLUME:
   MYSQL_VOLUME:
-  QUEUE_VOLUME:

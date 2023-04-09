@@ -1,11 +1,11 @@
 FROM lfelipeapo/php-nginx-web:1.0.0
 
-## Diretório da aplicação
+## Diretório das aplicações
 ARG APP_DIR=/var/www
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    apt-utils && \
+    apt-utils build-essential libssl-dev curl && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -22,8 +22,8 @@ RUN chmod 755 -R *
 COPY ./docker/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./docker/nginx/sites /etc/nginx/sites-available
 
-# configuração do supervisor
-RUN apt-get update && apt-get install -y supervisor htop && \
+# configuração do htop
+RUN apt-get update && apt-get install -y supervisor htop sudo && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -31,4 +31,15 @@ RUN apt-get update && apt-get install -y supervisor htop && \
 COPY ./docker/supervisord/supervisord.conf /etc/supervisor
 COPY ./docker/supervisord/conf /etc/supervisord.d/
 
-CMD ["bash", "-c", "cd /var/www/html && php artisan serve --host 0.0.0.0:8000 && php artisan queue:work & /usr/bin/supervisord -c /etc/supervisor/supervisord.conf"]
+CMD ["bash", "-c", "php artisan queue:work & /usr/bin/supervisord -c /etc/supervisor/supervisord.conf"]
+
+SHELL ["/bin/bash", "--login", "-c"]
+
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+RUN nvm install 16.19.1
+
+RUN node -v
+
+RUN echo "Finalizado instalação!"
+
