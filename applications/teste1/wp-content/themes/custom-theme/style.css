@@ -402,3 +402,150 @@ body{
     font-family: 'Poppins', sans-serif;
     font: normal, 21px/2.1rem, 'Poppins', sans-serif;
 }
+
+/** Header **/
+
+.main-menu {
+    margin: auto 15px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-menu .menu-items {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #FFF;
+    opacity: 0.7;
+}
+
+.main-menu .menu-items .logo-image {
+    height: 50px;
+    width: 100px;
+}
+
+.main-menu .menu-items .logo-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-menu .menu-items ul {
+    display: flex;
+    gap: 35px;
+}
+
+.main-menu .menu-items ul li a {
+    font-size: 1rem;
+    line-height: 1.483rem;
+    font-weight: 100;
+    color: #000;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.main-menu .menu-items ul li a:visited, a:hover {
+    color: rgb(27, 27, 27);
+}
+
+.main-menu .menu-items ul li a:focus {
+    color:rgb(70, 68, 68);
+}
+
+/** Section Hero **/
+
+section.hero {
+    background-size: cover;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .title {
+    display: flex;
+    max-width: 310px;
+    max-height: 400px;
+}
+
+.hero .title h1 {
+    font-size: 1.75rem;
+    font-weight: 100;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.hero .title h1 :first-child {
+    background-image: linear-gradient(to top, #D22688 50%, transparent 50%);
+    padding: 2px;
+    font-weight: 700;
+}
+
+.hero .title h1 strong {
+    font-weight: 700;
+}
+
+/** Section Hero Cards **/
+
+.hero-cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  transform: translateY(-40%);
+}
+
+.card {
+    padding: 1.15rem 1.5rem;
+    background-color: white;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    width: 270px;
+    height: 270px;
+}
+
+.card-icon {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2, p {
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 0.5rem 0;
+}
+
+.card .btn {
+    margin-top: 0.5rem;
+    display: inline-block;
+    background-color: #D22688;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 2rem;
+    max-width: 220px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #c0207a;
+}
