@@ -7,7 +7,7 @@
             $hero_subtitle = get_theme_mod('set_hero_subtitle', __('Please, type some subtitle', 'custom'));
             $hero_button_link = get_theme_mod('set_hero_button_link', '#');
             $hero_button_text = get_theme_mod('set_hero_button_text', __('Learn More', 'custom'));
-            $hero_height = get_theme_mod('set_hero_height', 675);
+            $hero_height = get_theme_mod('set_hero_height', 630);
             $hero_background = wp_get_attachment_url(get_theme_mod('set_hero_background'));
             ?>
             <section class="hero" style="background-image: url('<?= !isset($hero_background) ? esc_url($hero_background) : get_template_directory_uri() . "/assets/images/section_1_1.webp" ?>');">
@@ -20,37 +20,50 @@
                 </div>
             </section>
             <section class="hero-cards" style="max-height: 270px;">
-                <div class="card">
-                    <span class="card-icon">
-                        <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
-                    </span>
-                    <h2>Empréstimo Consignado</h2>
-                    <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
-                    <a href="#" class="btn"><strong>Simule agora</strong></a>
+                <div class="container">
+                    <div class="card">
+                        <span class="card-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                        <a href="#" class="btn"><strong>Simule agora</strong></a>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                        <a href="#" class="btn"><strong>Simule agora</strong></a>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                        <a href="#" class="btn"><strong>Simule agora</strong></a>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                        <a href="#" class="btn"><strong>Simule agora</strong></a>
+                    </div>
                 </div>
-                <div class="card">
-                    <span class="card-icon">
-                        <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
-                    </span>
-                    <h2>Empréstimo Consignado</h2>
-                    <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
-                    <a href="#" class="btn"><strong>Simule agora</strong></a>
-                </div>
-                <div class="card">
-                    <span class="card-icon">
-                        <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
-                    </span>
-                    <h2>Empréstimo Consignado</h2>
-                    <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
-                    <a href="#" class="btn"><strong>Simule agora</strong></a>
-                </div>
-                <div class="card">
-                    <span class="card-icon">
-                        <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
-                    </span>
-                    <h2>Empréstimo Consignado</h2>
-                    <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
-                    <a href="#" class="btn"><strong>Simule agora</strong></a>
+            </section>
+            <section class="hero-vantages">
+                <div class="container">
+                    <h3>
+                        VANTAGENS
+                    </h3>
+                    <p>
+                        Melhore a sua vida financeira com eficiência e tecnologia
+                    </p>
+                    <span>Somos contra grandes bancos, financeiras e intermediários que só querem lucrar com você. Nosso pensamento é diferente.</span>
                 </div>
             </section>
             <section class="home-blog">

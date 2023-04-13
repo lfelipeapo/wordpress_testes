@@ -1127,3 +1127,20 @@ Stack trace:
 [10-Apr-2023 03:28:59 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
 [10-Apr-2023 03:28:59 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
 [10-Apr-2023 03:29:12 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/teste1/wp-includes/update.php on line 447
+[13-Apr-2023 00:47:17 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:17 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:17 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:19 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:19 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:19 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:19 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:19 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:21 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:21 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:21 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:23 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:23 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:23 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:23 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 00:47:23 UTC] PHP Warning:  chmod(): Operation not permitted in /var/www/teste1/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[13-Apr-2023 03:28:06 UTC] PHP Warning:  Ocorreu um erro inesperado. Algo pode estar errado com o WordPress.org ou com a configuração deste servidor. Se os problemas persistirem, busque ajuda no <a href="https://br.wordpress.org/support/forums/">fórum de suporte</a>. (O WordPress não conseguiu estabelecer uma conexão segura com o WordPress.org. Contate o administrador do servidor.) in /var/www/teste1/wp-includes/update.php on line 209
