@@ -116,6 +116,64 @@ function custom_sidebars(){
     );
 }
 
+function custom_customize_register($wp_customize)
+{
+    $wp_customize->add_section('home_cards_section', array(
+        'title'    => __('Home Cards', 'custom'),
+        'priority' => 30,
+    ));
+
+    for ($i = 1; $i <= 4; $i++) {
+        $wp_customize->add_setting("home_card_{$i}_icon", array(
+            'type'       => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, "home_card_{$i}_icon", array(
+            'label'    => sprintf(__('Card %s Icon', 'custom'), $i),
+            'section'  => 'home_cards_section',
+            'settings' => "home_card_{$i}_icon",
+        )));
+
+        $wp_customize->add_setting("home_card_{$i}_title", array(
+            'type'       => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+
+        $wp_customize->add_control("home_card_{$i}_title", array(
+            'label'    => sprintf(__('Card %s Title', 'custom'), $i),
+            'section'  => 'home_cards_section',
+            'settings' => "home_card_{$i}_title",
+            'type'     => 'text',
+        ));
+
+        $wp_customize->add_setting("home_card_{$i}_description", array(
+            'type'       => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+
+        $wp_customize->add_control("home_card_{$i}_description", array(
+            'label'    => sprintf(__('Card %s Description', 'custom'), $i),
+            'section'  => 'home_cards_section',
+            'settings' => "home_card_{$i}_description",
+            'type'     => 'textarea',
+        ));
+
+        $wp_customize->add_setting("home_card_{$i}_link", array(
+            'type'       => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+
+        $wp_customize->add_control("home_card_{$i}_link", array(
+            'label'    => sprintf(__('Card %s Link', 'custom'), $i),
+            'section'  => 'home_cards_section',
+            'settings' => "home_card_{$i}_link",
+            'type'     => 'url',
+        ));
+    }
+}
+add_action('customize_register', 'custom_customize_register');
+
 if ( ! function_exists( 'wp_body_open' ) ){
 	function wp_body_open() {
 		do_action( 'wp_body_open' );

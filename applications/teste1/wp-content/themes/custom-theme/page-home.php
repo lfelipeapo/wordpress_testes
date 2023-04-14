@@ -19,40 +19,18 @@
                     </div>
                 </div>
             </section>
-            <section class="hero-cards" style="max-height: 270px;">
+            <section class="hero-cards">
                 <div class="container">
-                    <div class="card">
-                        <span class="card-icon">
-                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
-                        </span>
-                        <h2>Empréstimo Consignado</h2>
-                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
-                        <a href="#" class="btn"><strong>Simule agora</strong></a>
-                    </div>
-                    <div class="card">
-                        <span class="card-icon">
-                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
-                        </span>
-                        <h2>Empréstimo Consignado</h2>
-                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
-                        <a href="#" class="btn"><strong>Simule agora</strong></a>
-                    </div>
-                    <div class="card">
-                        <span class="card-icon">
-                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
-                        </span>
-                        <h2>Empréstimo Consignado</h2>
-                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
-                        <a href="#" class="btn"><strong>Simule agora</strong></a>
-                    </div>
-                    <div class="card">
-                        <span class="card-icon">
-                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
-                        </span>
-                        <h2>Empréstimo Consignado</h2>
-                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
-                        <a href="#" class="btn"><strong>Simule agora</strong></a>
-                    </div>
+                    <?php for ($i = 1; $i <= 4; $i++) : ?>
+                        <div class="card">
+                            <span class="card-icon">
+                                <img src="<?php echo esc_url(get_theme_mod("home_card_{$i}_icon")); ?>" alt="<?php echo esc_attr(get_theme_mod("home_card_{$i}_title")); ?>">
+                            </span>
+                            <h2><?php echo esc_html(get_theme_mod("home_card_{$i}_title")); ?></h2>
+                            <p><?php echo esc_html(get_theme_mod("home_card_{$i}_description")); ?></p>
+                            <a class="btn" href="<?php echo esc_url(get_theme_mod("home_card_{$i}_link")); ?>" class="card-link"><strong><?php _e('Simule agora', 'custom'); ?></strong></a>
+                        </div>
+                    <?php endfor; ?>
                 </div>
             </section>
             <section class="hero-vantages">
@@ -66,34 +44,112 @@
                     <span>Somos contra grandes bancos, financeiras e intermediários que só querem lucrar com você. Nosso pensamento é diferente.</span>
                 </div>
             </section>
-            <section class="home-blog">
+            <section class="hero-benefits">
                 <div class="container">
-                    <h2><?php esc_html_e('Latest News', 'custom') ?></h2>
-                    <?php
-
-                    $per_page = get_theme_mod('set_per_page', 3);
-                    $category_include = get_theme_mod('set_category_include');
-                    $category_exclude = get_theme_mod('set_category_exclude');
-
-                    $args = array(
-                        'post_type' => 'post',
-                        'posts_per_page' => esc_html($per_page),
-                        'category__in'  => explode(",", esc_html($category_include)),
-                        'category__not_in' => explode(",", esc_html($category_exclude))
-                    );
-
-                    $postlist = new WP_Query($args);
-
-                    if ($postlist->have_posts()) :
-                        while ($postlist->have_posts()) : $postlist->the_post();
-                            get_template_part('parts/content', 'latest-news');
-                        endwhile;
-                        wp_reset_postdata();
-                    else : ?>
-                        <p><?php esc_html_e('Nothing yet to be displayed!', 'custom') ?></p>
-                    <?php endif; ?>
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_2_1.webp"; ?>'>
+                        </span>
+                        <h2>Empréstimo Consignado</h2>
+                        <p>para beneficiários do INSS e pagamento a partir de 10 minutos.</p>
+                    </div>
                 </div>
             </section>
+            <section class="hero-app">
+                <div class="container">
+                    <div class="content">
+                        <div class="cel-bg">
+                            <img src='<?= get_template_directory_uri() . "/assets/images/section_4_1.webp"; ?>'>
+                        </div>
+                        <div class="our-platform">
+                            <h3>
+                                NOSSA PLATAFORMA
+                            </h3>
+                            <p>
+                                No site ou no aplicativo, as melhores oportunidades de crédito para você
+                            </p>
+                            <ul class="app-benefits">
+                                <li><span><img src='<?= get_template_directory_uri() . "/assets/images/check.svg"; ?>'></span>Fácil acesso e rapidez nos processos de contratação</li>
+                                <li><span><img src='<?= get_template_directory_uri() . "/assets/images/check.svg"; ?>'></span>Independência para você verificar suas informações 24h por dia</li>
+                                <li><span><img src='<?= get_template_directory_uri() . "/assets/images/check.svg"; ?>'></span>Liberdade para você escolher a sua melhor oportunidade</li>
+                                <li><span><img src='<?= get_template_directory_uri() . "/assets/images/check.svg"; ?>'></span>Portabilidade online do seu consignado</li>
+                            </ul>
+                            <div class="download">
+                                <div class="google"><a href="#"><img src='<?= get_template_directory_uri() . "/assets/images/app_google.webp"; ?>'></a></div>
+                                <div class="app-store"><a href="#"><img src='<?= get_template_directory_uri() . "/assets/images/app_apple.webp"; ?>'></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hero-porpose">
+                <div class="container">
+                    <div class="content">
+                        <h3>
+                            PROPÓSITO
+                        </h3>
+                        <p>
+                            Melhorar a vida financeira dos brasileiros
+                        </p>
+                        <span>Temos mais de 2 bilhões em investimento para oferecermos as menores taxas a você.</span>
+                        <a href="#" class="btn"><strong>Simule agora</strong></a>
+                    </div>
+                    <div class="content">
+                        <div class="graph"><img src='<?= get_template_directory_uri() . "/assets/images/section_5_1.webp"; ?>'></div>
+                    </div>
+                </div>
+            </section>
+            <section class="hero-final">
+                <div class="container">
+                    <div class="content one">
+                        <span><img src='<?= get_template_directory_uri() . "/assets/images/section_6_1.webp"; ?>'></span>
+                        <p class="msg">Faça como os <strong>mais de 500 mil brasileiros</strong> que já reduziram o endividamento com meutudo.</p>
+                    </div>
+                    <div class="content two">
+                        <div class="shape">
+                            <img class="img" src='<?= get_template_directory_uri() . "/assets/images/shape_3.png"; ?>'>
+                            <img class="img2" src='<?= get_template_directory_uri() . "/assets/images/section_7_1.webp"; ?>'>
+                        </div>
+                        <div class="app">
+                            <p class="msg2">Baixe o aplicativo meutudo<strong>.</strong> e confira todas as suas oportunidades.
+                            </p>
+                            <div class="download2">
+                                <div class="google"><a href="#"><img src='<?= get_template_directory_uri() . "/assets/images/app_google.webp"; ?>'></a></div>
+                                <div class="app-store"><a href="#"><img src='<?= get_template_directory_uri() . "/assets/images/app_apple.webp"; ?>'></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         </main>
     </div>
 </div>
