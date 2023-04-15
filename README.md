@@ -42,3 +42,17 @@ Para editar, qualquer informação da home, acesse /wp-admin com o usuário test
 Depois clique em: APARÊNCIA > TEMA > Custom Theme > Personalizar.
 
 Cada seção da página home possui um hero section referente a si.
+
+## Teste 3
+
+Para testar a API, indica-se o uso do aplicativo Insomnia, clique em Preferências e depois em Data e em import escolha rotas_desafio3.json dentro da pasta json na pasta docker.
+
+Em http://localhost:8083 verifique se a API está funcionando.
+
+Em http://localhost:8083/data se encontram as validações quanto ao desafio.
+
+Utilizado Basic Auth com header ContentType json.
+
+Para autenticação:
+usuario/senha
+/data só aceita requisição POST conforme solicitado no desafio.

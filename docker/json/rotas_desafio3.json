@@ -1,0 +1,78 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-04-15T00:00:00.000Z",
+  "__export_source": "insomnia.core",
+  "resources": [
+    {
+      "_id": "req_01",
+      "_type": "request",
+      "authentication": {
+        "password": "senha",
+        "username": "usuario",
+        "type": "basic"
+      },
+      "body": {},
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "name": "POST /data",
+      "parameters": [],
+      "parentId": "wrk_01",
+      "url": "{{ baseUrl }}/data"
+    },
+    {
+      "_id": "req_02",
+      "_type": "request",
+      "authentication": {},
+      "body": {},
+      "headers": [],
+      "method": "GET",
+      "name": "GET /",
+      "parameters": [],
+      "parentId": "wrk_01",
+      "url": "{{ baseUrl }}/"
+    },
+    {
+      "_id": "req_03",
+      "_type": "request",
+      "authentication": {},
+      "body": {},
+      "headers": [],
+      "method": "GET",
+      "name": "GET Rota não encontrada",
+      "parameters": [],
+      "parentId": "wrk_01",
+      "url": "{{ baseUrl }}/invalid-route"
+    },
+    {
+      "_id": "wrk_01",
+      "_type": "workspace",
+      "description": "",
+      "name": "Desafio API"
+    },
+    {
+      "_id": "env_01",
+      "_type": "environment",
+      "color": null,
+      "data": {
+        "baseUrl": "http://localhost"
+      },
+      "name": "Base Environment",
+      "parentId": "wrk_01"
+    },
+    {
+      "_id": "env_02",
+      "_type": "environment",
+      "color": null,
+      "data": {},
+      "name": "Sub Environment",
+      "parentId": "env_01"
+    }
+  ]
+}
+
