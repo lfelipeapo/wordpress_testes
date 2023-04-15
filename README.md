@@ -56,3 +56,11 @@ Utilizado Basic Auth com header ContentType json.
 Para autenticação:
 usuario/senha
 /data só aceita requisição POST conforme solicitado no desafio.
+
+## Teste 4
+
+- Utilizado Axios, Bootstrap e Html simples bem como um css para apenas dar uma certa aparência ao formulário.
+
+- Usado endpoint informado no desafio.
+
+Acessível pela rota: http://localhost:8084.
