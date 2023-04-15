@@ -883,7 +883,7 @@ section.hero {
 .two {
   padding: 0 !important;
   max-width: 1200px;
-  max-height: 270px;
+  max-height: 330px;
 }
 
 .shape {
@@ -900,7 +900,7 @@ section.hero {
 
 .shape .img {
   width: min-content;
-  height: 270px;
+  height: 330px;
   z-index: 0;
 }
 
@@ -929,6 +929,7 @@ section.hero {
 }
 
 .msg2 {
+  margin-top: 1rem;
   color: white;
   font-weight: 700;
   line-height: 1.1;

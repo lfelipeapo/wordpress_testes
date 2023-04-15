@@ -25,3 +25,20 @@ http://localhost:8082 para teste 2.
 http://localhost:8083 para teste 3.
 
 http://localhost:8084 para teste 4.
+
+## Teste 1
+
+- Para o teste 1, acesse a conexão do banco de dados mysql e importe o arquivo dump.sql.
+
+- Depois acesse da pasta raiz do projeto, digitando no terminal:
+`cd applications/teste1`
+
+Use o acesso via terminal ao arquivo wp-config.php e verifique se a variável DB_NAME está com o mesmo nome que você deu para o banco de dados importado.
+
+Depois, acesse http://localhost:8081/ e verifique a página do desafio 1.
+
+Para editar, qualquer informação da home, acesse /wp-admin com o usuário teste, senha teste.
+
+Depois clique em: APARÊNCIA > TEMA > Custom Theme > Personalizar.
+
+Cada seção da página home possui um hero section referente a si.
