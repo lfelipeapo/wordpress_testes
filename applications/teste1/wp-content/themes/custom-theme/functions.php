@@ -3,6 +3,7 @@
 function custom_load_scripts(){
     wp_enqueue_style( 'custom-style', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css' ), 'all' );
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap', array(), null );
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css', array(), '5.15.4');
     wp_enqueue_script( 'dropdown', get_template_directory_uri() . '/js/dropdown.js', array(), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'custom_load_scripts' );
@@ -118,6 +119,46 @@ function custom_sidebars(){
 
 function custom_customize_register($wp_customize)
 {
+
+    // Hero section settings
+    $wp_customize->add_section('hero_section', array(
+        'title' => __('Hero Section', 'custom'),
+        'priority' => 30,
+    ));
+
+    // Hero background
+    $wp_customize->add_setting('hero_background', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
+        'label' => __('Hero Background', 'custom'),
+        'section' => 'hero_section',
+        'settings' => 'hero_background',
+    )));
+
+    // Hero height
+    $wp_customize->add_setting('hero_height', array(
+        'default' => '600',
+        'sanitize_callback' => 'absint',
+    ));
+    $wp_customize->add_control('hero_height', array(
+        'label' => __('Hero Height (in px)', 'custom'),
+        'section' => 'hero_section',
+        'type' => 'number',
+    ));
+
+    // Hero title
+    $wp_customize->add_setting('hero_title', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control('hero_title', array(
+        'label' => __('Hero Title', 'custom'),
+        'section' => 'hero_section',
+        'type' => 'text',
+    ));
+
     $wp_customize->add_section('home_cards_section', array(
         'title'    => __('Home Cards', 'custom'),
         'priority' => 30,
@@ -171,7 +212,235 @@ function custom_customize_register($wp_customize)
             'type'     => 'url',
         ));
     }
+
+    // Hero Vantages section settings
+    $wp_customize->add_section('hero_vantages_section', array(
+        'title' => __('Hero Vantages Section', 'custom'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('hero_vantages_title', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control('hero_vantages_title', array(
+        'label' => __('Title', 'custom'),
+        'section' => 'hero_vantages_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_vantages_subtitle', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control('hero_vantages_subtitle', array(
+        'label' => __('Subtitle', 'custom'),
+        'section' => 'hero_vantages_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_vantages_description', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_textarea_field',
+    ));
+    $wp_customize->add_control('hero_vantages_description', array(
+        'label' => __('Description', 'custom'),
+        'section' => 'hero_vantages_section',
+        'type' => 'textarea',
+    ));
+
+    // Hero Benefits section settings
+    $wp_customize->add_section('hero_benefits_section', array(
+        'title' => __('Hero Benefits Section', 'custom'),
+        'priority' => 30,
+    ));
+
+    for ($i = 1; $i <= 5; $i++) {
+        $wp_customize->add_setting("hero_benefit_{$i}_icon", array(
+            'type' => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, "hero_benefit_{$i}_icon", array(
+            'label' => sprintf(__('Benefit %s Icon', 'custom'), $i),
+            'section' => 'hero_benefits_section',
+            'settings' => "hero_benefit_{$i}_icon",
+        )));
+
+        $wp_customize->add_setting("hero_benefit_{$i}_title", array(
+            'type' => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+
+        $wp_customize->add_control("hero_benefit_{$i}_title", array(
+            'label' => sprintf(__('Benefit %s Title', 'custom'), $i),
+            'section' => 'hero_benefits_section',
+            'settings' => "hero_benefit_{$i}_title",
+            'type' => 'text',
+        ));
+
+        $wp_customize->add_setting("hero_benefit_{$i}_description", array(
+            'type' => 'theme_mod',
+            'capability' => 'edit_theme_options',
+        ));
+
+        $wp_customize->add_control("hero_benefit_{$i}_description", array(
+            'label' => sprintf(__('Benefit %s Description', 'custom'), $i),
+            'section' => 'hero_benefits_section',
+            'settings' => "hero_benefit_{$i}_description",
+            'type' => 'textarea',
+        ));
+    }
+
+    // Hero App section settings
+    $wp_customize->add_section('hero_app_section', array(
+        'title' => __('Hero App Section', 'custom'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('hero_app_title', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('hero_app_title', array(
+        'label' => __('Title', 'custom'),
+        'section' => 'hero_app_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_app_subtitle', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('hero_app_subtitle', array(
+        'label' => __('Subtitle', 'custom'),
+        'section' => 'hero_app_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_app_list_items', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_textarea_field',
+    ));
+
+    $wp_customize->add_control('hero_app_list_items', array(
+        'label' => __('List Items', 'custom'),
+        'description' => __('Enter each item on a new line.', 'custom'),
+        'section' => 'hero_app_section',
+        'type' => 'textarea',
+    ));
+
+    // Hero Purpose section settings
+    $wp_customize->add_section('hero_purpose_section', array(
+        'title' => __('Hero Purpose Section', 'custom'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('hero_purpose_title', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('hero_purpose_title', array(
+        'label' => __('Title', 'custom'),
+        'section' => 'hero_purpose_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_purpose_subtitle', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('hero_purpose_subtitle', array(
+        'label' => __('Subtitle', 'custom'),
+        'section' => 'hero_purpose_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_purpose_description', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_textarea_field',
+    ));
+
+    $wp_customize->add_control('hero_purpose_description', array(
+        'label' => __('Description', 'custom'),
+        'section' => 'hero_purpose_section',
+        'type' => 'textarea',
+    ));
+
+    // Hero Final section settings
+    $wp_customize->add_section('hero_final_section', array(
+        'title' => __('Seção Hero Final', 'custom'),
+        'priority' => 30,
+    ));
+
+    // Hero Final message 1
+    $wp_customize->add_setting('hero_final_msg1', array(
+        'default' => 'Faça como os <strong>mais de 500 mil brasileiros</strong> que já reduziram o endividamento com meutudo.',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'hero_final_msg1', array(
+        'label' => __('Mensagem 1', 'custom'),
+        'section' => 'hero_final_section',
+        'settings' => 'hero_final_msg1',
+        'type' => 'textarea',
+    )));
+
+    // Hero Final message 2
+    $wp_customize->add_setting('hero_final_msg2', array(
+        'default' => 'Baixe o aplicativo meutudo<strong>.</strong> e confira todas as suas oportunidades.',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'hero_final_msg2', array(
+        'label' => __('Mensagem 2', 'custom'),
+        'section' => 'hero_final_section',
+        'settings' => 'hero_final_msg2',
+        'type' => 'textarea',
+    )));
+
+    // Hero Final Image 1
+    $wp_customize->add_setting('hero_final_img1', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_final_img1', array(
+        'label' => __('Imagem 1', 'custom'),
+        'section' => 'hero_final_section',
+        'settings' => 'hero_final_img1',
+    )));
+
+    // Hero Final Image 2
+    $wp_customize->add_setting('hero_final_img2', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_final_img2', array(
+        'label' => __('Imagem 2', 'custom'),
+        'section' => 'hero_final_section',
+        'settings' => 'hero_final_img2',
+    )));
+
+    // Hero Final Image 3
+    $wp_customize->add_setting('hero_final_img3', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_final_img3', array(
+        'label' => __('Imagem 3', 'custom'),
+        'section' => 'hero_final_section',
+        'settings' => 'hero_final_img3',
+    )));
+
 }
+
 add_action('customize_register', 'custom_customize_register');
 
 if ( ! function_exists( 'wp_body_open' ) ){

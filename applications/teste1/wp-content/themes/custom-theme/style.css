@@ -1160,27 +1160,65 @@ section.hero {
   }
 
 }
-
-footer{
+footer {
   margin-top: 128px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  row-gap: 3rem;
+  column-gap: 2.5rem;
+}
+
+footer .container .footer-column:nth-child(1) {
+  height: auto;
+  width: 10%;
+  gap: 0.5rem;
+}
+
+footer .container .footer-column:nth-child(4) {
+  justify-content: flex-start;
+}
+
+footer .container .footer-column:nth-child(5) {
+  width: 100%;
+  font-size: 0.5rem;
+}
+
+footer .container .footer-column .footer-logo {
+  max-width: 100%;
+  height: 30px;
+  width: 120px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: #ECECEC;
-  padding: 20px;
+  padding: 3rem;
   color: #000;
 }
 
 .footer-column {
   display: flex;
+  width: 15%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+}
+
+.footer-column h4 {
+  font-size: 12px;
+  font-weight: 800;
+  padding-bottom: 8px;
 }
 
 .footer-column p {
   font-size: 12px;
+  font-weight: 100;
 }
 
 .footer-column a {
@@ -1200,20 +1238,61 @@ footer{
   font-size: 12px;
 }
 
-.politica-privacidade {
+.footer-links {
   display: flex;
   flex-direction: row;
+  gap: 5px;
+  padding-left: 90px;
 }
 
-.politica-privacidade li {
+.footer-links li {
   margin-left: 20px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
+    align-items: center;
   }
   .footer-column {
     margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  footer .container .footer-column:nth-child(1) {
+    height: auto;
+    width: 50%;
+    gap: 1rem;
+  }
+  .footer-column:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    height: 60px !important;
+    width: 240px !important;
+    margin-bottom: 0.5rem;
+  }
+  .social-icons {
+    margin-top: 0.5rem;
+    justify-content: center;
+    width: 60%;
+  }
+  
+  .footer-column h4, .footer-column p, .footer-column ul li, .footer-links a {
+    font-size: 14px;
   }
 }
