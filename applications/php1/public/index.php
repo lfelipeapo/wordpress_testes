@@ -11,7 +11,7 @@ echo "Teste do Banco de Dados MySql";
 $servername = "mysql";
 $username = "root";
 $password = "senha_exemplar_mysql";
-$database = "db_mysql_exemplo";
+$database = "db";
 $port = "3306";
 
 // Criar conexão
