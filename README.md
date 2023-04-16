@@ -43,6 +43,12 @@ Depois clique em: APARÊNCIA > TEMA > Custom Theme > Personalizar.
 
 Cada seção da página home possui um hero section referente a si.
 
+##Teste2
+
+Para rodar este projeto acesse o container dele por meio do script-acess-container.sh que digite o id dele, para saber o id digite no prompt de comando do linux docker-ps ou acesse o Docker Desktop e verifique o ID, ou use o script script-docker-running.sh para descobrir o ID do container. Dai ao acessar o script-acess-container.sh, digite o id do container, acesse via bash, digite cd /teste2/next-teste2 e rode npm install, depois rode npm run dev que a aplicação irá rodar na porta 3000.
+
+Foram usadas apenas Bulma Framework, parse-react e axios.
+
 ## Teste 3
 
 Para testar a API, indica-se o uso do aplicativo Insomnia, clique em Preferências e depois em Data e em import escolha rotas_desafio3.json dentro da pasta json na pasta docker.

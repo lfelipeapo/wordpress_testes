@@ -10,8 +10,8 @@
             $hero_height = esc_attr(get_theme_mod('hero_height'));
             $hero_background = get_theme_mod('hero_background');
             ?>
-            <section class="hero" style="background-image: url('<?= !isset($hero_background) ? esc_url($hero_background) : get_template_directory_uri() . "/assets/images/section_1_1.webp" ?>');">
-                <div class="overlay" style="min-height: <?= $hero_height ?>px">
+                <section class="hero" style="background-image: url('<?= !isset($hero_background) ? esc_url($hero_background) : get_template_directory_uri() . "/assets/images/section_1_1.webp" ?>');">
+                      <div class="overlay" style="min-height: <?= $hero_height ?>px">
                     <div class="container">
                         <div class="title">
                             <h1><?= $hero_title; ?></h1>
