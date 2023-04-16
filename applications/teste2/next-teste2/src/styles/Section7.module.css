@@ -1,0 +1,308 @@
+/* Hero Section Final */
+
+.heroFinal {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heroFinal .heroFinalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 156px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row ! important;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.8rem;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.one {
+  display:flex;
+  align-items: center !important;
+  max-width: 800px;
+  max-height: 10rem;
+  gap: 3rem;
+}
+
+.one :first-child span {
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 200px;
+}
+
+.one span img {
+  height: auto;
+  max-width: 100%;
+}
+
+.msg {
+  color: white;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 2rem;
+}
+
+.msg span {
+  color: #d22688;
+}
+
+.two {
+  padding: 0 !important;
+  max-width: 1200px;
+  max-height: 330px;
+}
+
+.shape {
+  display: flex;
+  padding: 0 2rem;
+  width: 40%;
+  height: 50%;
+}
+
+.shape .img2 {
+  transform: translate(-118%, -25%);
+  z-index: 2;
+}
+
+.shape .img {
+  width: min-content;
+  height: 330px;
+  z-index: 0;
+}
+
+.two .app {
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.download2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem; 
+}
+
+.download2 .google, .appStore {
+  border-radius: 5px;
+  border: 1px solid white;
+  max-width: fit-content;
+}
+
+.msg2 {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 2.5rem;
+  margin-bottom: 1rem !important;
+}
+
+.msg2 strong {
+  color: #d22688;
+}
+
+@media (max-width: 1024px) {
+  .heroFinal .container .content {
+    flex-direction: row;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  .two .app {
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-content: center;
+  }
+
+  .one span {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
+
+  .heroFinal .container .content {
+    flex-direction: row;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  .one span img {
+    max-width: 100px;
+  }
+
+  .msg {
+    font-size: 1.8rem;
+  }
+
+  .msg2 {
+    font-size: 2.2rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+  .one {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+  }
+
+  .one span {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .one span img {
+    max-width: 90%;
+  }
+
+  .msg {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .download2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .msg2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .container {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .heroFinal .container {
+    gap: 60px;
+  }
+
+  .one span img {
+    max-width: 100px;
+  }
+
+  .msg {
+    font-size: 1.5rem;
+  }
+
+  .msg2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .heroFinal .container {
+    gap: 30px;
+  }
+
+  .msg {
+    font-size: 1.2rem;
+  }
+
+  .msg2 {
+    font-size: 1.8rem;
+  }
+
+  .one span img {
+    z-index: 0;
+    max-width: 100% !important;
+  }
+
+  .one span img {
+    z-index: 0;
+    max-width: 20%;
+  }
+
+  .msg {
+    font-size: 1.2rem;
+  }
+
+  .msg2 {
+    font-size: 1.5rem;
+  }
+
+  .download {
+    padding: 8px 2px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .heroFinal .container {
+    gap: 30px;
+  }
+
+  .msg {
+    font-size: 1.2rem;
+  }
+
+  .msg2 {
+    font-size: 1.8rem;
+  }
+
+  .one span img {
+    z-index: 0;
+    max-width: 100% !important;
+  }
+
+  .one span img {
+    z-index: 0;
+    max-width: 20%;
+  }
+
+  .msg {
+    font-size: 1.2rem;
+  }
+
+  .msg2 {
+    font-size: 1.5rem;
+  }
+
+  .download {
+    padding: 8px 2px;
+    display: flex;
+    flex-direction: column;
+  }
+}

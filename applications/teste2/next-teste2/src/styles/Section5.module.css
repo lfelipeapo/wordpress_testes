@@ -1,0 +1,117 @@
+/** Section Hero App **/
+
+.heroApp {
+  padding-top:20px;
+  margin: 0 auto;
+  background-image: url(../../public/assets/images/shape_2.png);
+  background-position: right -10px;
+  background-repeat: no-repeat;
+}
+
+.heroApp .container {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.heroApp .container .content {
+  padding: 25px;
+  gap: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.celBg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.625rem;
+  width: 50%;
+}
+
+.ourPlatform {
+  width: 50%;
+}
+.ourPlatform h3 {
+  margin-bottom: 0;
+  color: #d22688;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.ourPlatform p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color:black;
+  padding-bottom: 1rem;
+}
+
+.ourPlatform .appBenefits {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:center;
+  list-style-type: none;
+}
+
+.ourPlatform .appBenefits li {
+  max-width: 450px;
+  display: inline-flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ourPlatform .appBenefits li span {  
+  width:30px;
+  height:30px;
+  padding: 2px;
+  font-weight: 200;
+  font-size: 0.7rem;
+}
+
+.download {
+  padding: 32px 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.google, .appStore {
+  height: 100%;
+  width: 100%;
+}
+
+.google img, .appStore img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  
+  .heroApp .container .content {
+    flex-wrap: wrap;
+  }
+  
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .heroApp .container {
+    width: 100%;
+  }
+
+  .heroApp .container .content {
+    flex-direction: column;
+  }
+}
+

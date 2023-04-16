@@ -1,0 +1,43 @@
+/* Section Hero Vantages */
+
+.heroVantages {
+  display: flex;
+  text-align:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 30%;
+  margin-bottom: 70px;
+}
+
+.heroVantages h3 {
+  color: #d22688;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.heroVantages p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color:black;
+  padding-bottom: 1rem;
+}
+
+.heroVantages span {
+  font-weight: 200;
+  font-size: 0.7rem;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .heroVantages {
+    max-width: 50%;
+  }
+}
+@media (max-width: 768) {
+  .heroVantages {
+    max-width: 100%;
+  }
+}

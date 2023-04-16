@@ -1,0 +1,113 @@
+.heroPurposeContainer {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  text-align:center;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.heroPurposeContent {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+}
+
+.heroPurposeContentH3 {
+  color: #d22688 !important; 
+  font-size: 1rem !important;
+  font-weight: 100 !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 0 !important;
+}
+
+.heroPurposeContentP {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: black;
+}
+
+.heroPurposeContentSpan {
+  font-weight: 200;
+  font-size: 1rem;
+  padding-bottom: 1.1rem;
+  text-align: left;
+}
+
+.heroPurposeContentBtn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  background-color: #d22688;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 2rem;
+  max-width: 165px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+
+.heroPurposeContentBtn:hover {
+  background-color: #c0207a;
+}
+
+.graph {
+  height: 100%;
+  width: 100%;
+}
+
+.graphImg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+ .heroPorpose .container {
+    flex-direction: column;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+ .heroPorpose .container .content {
+    width: 100%;
+  }
+
+  .heroPorpose .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:480px) {
+
+.heroPurposeContent {
+  width: 100%;
+}
+
+.heroPurposeContainer {
+  flex-direction: column;
+}
+
+  .heroPorpose .container .content {
+    width: 100%;
+  }
+
+  .heroPorpose .container {
+    flex-direction: column;
+  }
+}
+

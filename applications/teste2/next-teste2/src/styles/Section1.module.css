@@ -1,0 +1,43 @@
+/** Section Hero **/
+
+section.hero {
+  background-size: cover;
+  background-image: url('../../public/assets/images/section_1_1.webp');
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.hero .title {
+  display: flex;
+  max-width: 310px;
+  max-height: 400px;
+}
+
+.hero .title h1 {
+  font-size: 1.75rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero .title h1 :first-child {
+  background-image: linear-gradient(to top, #d22688 50%, transparent 50%);
+  padding: 2px;
+  font-weight: 700;
+}
+
+.hero .title h1 strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width:1024px) {
+    .overlay {
+        padding: 20px;
+    }
+}

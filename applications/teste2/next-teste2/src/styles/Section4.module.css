@@ -1,0 +1,65 @@
+/* Section Hero Benefits */
+
+.benefits {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.benefits .container{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+
+.benefitIcon {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 0.625rem;
+}
+
+.benefitIcon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.benefit {
+  padding: 0.5rem;
+  flex: 0.5;
+  width: 15%
+}
+
+.benefit h2 {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.benefit p {
+  font-size: 10px;
+  font-weight: 100;
+  line-height: 1.1;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+.benefits .container {
+    flex-direction: column;
+  }
+
+  .benefit {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .benefits .container {
+    flex-direction: column;
+  }
+}
+
