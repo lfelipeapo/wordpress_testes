@@ -3,7 +3,7 @@
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <?php
-            $hero_title =  get_theme_mod('hero_title') ? esc_html(get_theme_mod('hero_title')) : 'A gente <strong>transforma</strong> o crédito no Brasil para que você tenha <strong>dinheiro mais barato na hora que precisar</strong>';
+            $hero_title =  get_theme_mod('hero_title') ? esc_html(get_theme_mod('hero_title')) : "A gente <span>transforma</span> o crédito no Brasil para que você tenha <strong>o dinheiro mais barato na hora que precisar</strong>";
             $hero_subtitle = get_theme_mod('set_hero_subtitle', __('Please, type some subtitle', 'custom'));
             $hero_button_link = get_theme_mod('set_hero_button_link', '#');
             $hero_button_text = get_theme_mod('set_hero_button_text', __('Learn More', 'custom'));

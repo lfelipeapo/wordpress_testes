@@ -150,7 +150,7 @@ function custom_customize_register($wp_customize)
 
     // Hero title
     $wp_customize->add_setting('hero_title', array(
-        'default' => '',
+        'default' => 'A gente <span>transforma</span> o crédito no Brasil para que você tenha <strong>o dinheiro mais barato na hora que precisar</strong>',
         'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize->add_control('hero_title', array(
